@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmklub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-reg">
+    <nav id="navbar">
+        <img src="images/logo.png" alt="Logo" id="logo">
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filmek.html">Films</a></li>
+            <li><a href="reg.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <div class="bg-img-reg"></div>
+    <article id="reg">
+        <h2>Sign up</h2>
+        <form action="reg.html" method="get">
+            <label for="user">Username: </label><br>
+            <input type="text" name="user" id="user"><br>
+            <label for="passw">Password: </label><br>
+            <input type="password" name="passw" id="passw"><br>
+            <label for="bdate">Birthdate: </label><br>
+            <input type="date" name="bdate" id="bdate"><br>
+            <label for="email">E-mail: </label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">other</label><br>
+            
+            <input type="checkbox" name="adat" id="adat">
+            <label for="adat">I agree to the privacy policy.</label><br>
+            <input type="checkbox" name="szerzodes" id="szerzodes">
+            <label for="szerzodes">I agree to the terms and conditions.</label><br>
+
+            <h3>Choose your interests:</h3>
+            <select name="osztaly" id="osztaly">
+                <option value="none">-----</option>
+                <option value="scout">Scout</option>
+                <option value="sentry">Sentry</option>
+                <option value="warden">Warden</option>
+                <option value="gunner">Gunner</option>
+            </select>
+            <br>
+            <br>
+            <h3>Introduce yourself: </h3>
+            <textarea name="intro" id="intro"></textarea>
+            <br>
+            <input type="submit" value="Sign up">
+        </form>
+
+    </article>  
+</body>
+</html>
