@@ -222,6 +222,7 @@ body {
     z-index: 1;
     opacity: 0.2;
     transition: filter 0.3s;
+    background-attachment: fixed;
 }
 
 .overlay {
